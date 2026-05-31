@@ -124,6 +124,20 @@
       max-width: var(--max-w);
       margin: 0 auto;
       width: 100%;
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 3rem;
+      align-items: center;
+    }
+
+    .hero-avatar {
+      width: 148px;
+      height: 148px;
+      border-radius: 50%;
+      border: 1px solid var(--gray-300);
+      object-fit: cover;
+      display: block;
+      flex-shrink: 0;
     }
 
     .hero-eyebrow {
@@ -427,6 +441,17 @@
       nav { padding: 0 1.25rem; }
       #hero { padding: 3rem 1.25rem; }
 
+      .hero-inner {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+      }
+
+      .hero-avatar {
+        width: 96px;
+        height: 96px;
+        order: -1;
+      }
+
       .nav-links { display: none; }
 
       .timeline-item {
@@ -457,6 +482,7 @@
     <!-- HERO -->
     <section id="hero">
       <div class="hero-inner">
+        <div class="hero-text">
         <div class="hero-eyebrow">
           <span class="dot"></span>
           AI Scientist &amp; Researcher · ACS-USP
@@ -477,6 +503,12 @@
             Email
           </a>
         </div>
+        </div>
+        <img
+          class="hero-avatar"
+          src="https://avatars.githubusercontent.com/u/3290765?v=4"
+          alt="Felippe Alves"
+        />
       </div>
     </section>
 
