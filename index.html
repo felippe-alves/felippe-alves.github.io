@@ -511,6 +511,31 @@
     }
 
     /* ── PUBLICATIONS ───────────────────────── */
+    .pub-profiles {
+      display: flex;
+      gap: 1.5rem;
+      margin-bottom: 2.5rem;
+      flex-wrap: wrap;
+    }
+
+    .pub-profile-link {
+      font-family: var(--font-mono);
+      font-size: 0.72rem;
+      color: var(--muted);
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      letter-spacing: 0.03em;
+      border-bottom: 1px solid var(--rule);
+      padding-bottom: 1px;
+      transition: color 0.2s, border-color 0.2s;
+    }
+
+    .pub-profile-link:hover { color: var(--ink); border-color: var(--ink); }
+
+    .pub-profile-icon { font-style: normal; }
+
     .pub-list { display: flex; flex-direction: column; }
 
     .pub-item {
@@ -1002,6 +1027,16 @@
     <section id="publications">
       <div class="inner">
         <p class="section-label">§ 04 &nbsp; Publications</p>
+        <div class="pub-profiles reveal">
+          <a class="pub-profile-link" href="https://scholar.google.com/citations?hl=pt-BR&authuser=1&user=9117T60AAAAJ" target="_blank" rel="noopener">
+            <span class="pub-profile-icon">◈</span>
+            <span>Google Scholar</span>
+          </a>
+          <a class="pub-profile-link" href="https://orcid.org/0000-0001-7310-3252" target="_blank" rel="noopener">
+            <span class="pub-profile-icon">◈</span>
+            <span>ORCID 0000-0001-7310-3252</span>
+          </a>
+        </div>
         <div class="pub-list">
 
           <div class="pub-item reveal">
